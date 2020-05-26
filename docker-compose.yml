@@ -1,0 +1,11 @@
+version: "3"
+services: 
+    aria2:
+        image: aria
+        volumes: 
+            - ~/Downloads/aria2:/data
+            - ./html:/var/www/html
+        restart: always
+        ports: 
+            - 6800:6800
+            - 80:80
